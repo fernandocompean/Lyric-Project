@@ -9,9 +9,11 @@ import { LyricsComponent } from './components/lyrics/lyrics.component';
 
 import { HttpClientModule } from "@angular/common/http";
 import { NgZorroAntdModule, NZ_I18N, en_US } from "ng-zorro-antd";
+import { SearchComponent } from './components/search/search.component';
+
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, LyricsComponent],
+  declarations: [AppComponent, HomeComponent, LyricsComponent, SearchComponent, ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
