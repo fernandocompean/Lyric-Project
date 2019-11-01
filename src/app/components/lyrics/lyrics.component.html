@@ -1,1 +1,23 @@
-<p>lyrics works!</p>
+<nz-layout>
+  <nz-header>
+
+    <ul nzTheme="dark" nzMode="horizontal">
+    </ul>
+  </nz-header>
+  <nz-content>
+
+    <div class="inner-content">
+      <div style="background: #ECECEC;padding:30px;">
+        <nz-card style="width:300px;" [nzBordered]="false" nzTitle="Nombre de la canción" [nzExtra]="extraTemplate">
+          <p>Letra de la canción</p>
+
+        </nz-card>
+        <br>
+        <br>
+        <button class="btn btn-outline-danger" [routerLink]="['/home']">Regresar</button>
+      </div>
+    </div>
+
+  </nz-content>
+  <nz-footer>©2019</nz-footer>
+</nz-layout>
