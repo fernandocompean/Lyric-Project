@@ -8,18 +8,26 @@
     <nz-breadcrumb>
 
     </nz-breadcrumb>
+
+
     <div class="inner-content">
       <h1>Buscador de letras de canciones</h1>
       <br />
       <br />
-      <input nz-input placeholder="Nombre de la canción" [(ngModel)]="value" />
+      <input nz-input placeholder="Nombre de la canción" [(ngModel)]="song" />
+
       <br />
       <br />
-      <input nz-input placeholder="Nombre del artista" [(ngModel)]="value" [disabled]="true" />
+      <input nz-input placeholder="Nombre del artista" [(ngModel)]="artist" />
+
       <br />
       <br />
-      <button class="btn btn-outline-primary" [routerLink]="['/lyrics']">Buscar</button>
+      <button class="btn btn-outline-primary" (click)="getLyric()">
+        Buscar
+      </button>
     </div>
+
+
 
   </nz-content>
   <nz-footer>©2019</nz-footer>
